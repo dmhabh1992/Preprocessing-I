@@ -134,3 +134,29 @@ html,
 body {
   height: 100%;
 }
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 15px;
+  padding: 4px;
+  text-align: center;
+  word-spacing: 40px;
+}
+nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: purple;
+  background-color: white;
+  margin: 0 45px;
+}
+.title {
+  display: flex;
+  width: 30%;
+  padding-left: 10%;
+}
+h1 {
+  font-size: 30px;
+  color: aqua;
+  
+}
