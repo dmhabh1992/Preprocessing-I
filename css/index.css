@@ -158,5 +158,9 @@ nav a {
 h1 {
   font-size: 30px;
   color: aqua;
-  
+}
+h2 {
+  font-size: 20px;
+  color: purple;
+  text-decoration: underline;
 }
