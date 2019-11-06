@@ -170,16 +170,15 @@ h2 {
 .top {
   display: flex;
   border: 2px solid black;
-  width: 100%;
+  width: 80%;
   padding: 20px;
+  margin-left: 10%;
 }
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .intro p {
   display: flex;
   align-content: center;
-  margin: auto 20px;
 }
