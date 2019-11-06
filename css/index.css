@@ -183,3 +183,7 @@ h2 {
   display: flex;
   align-content: center;
 }
+.center {
+  display: flex;
+  width: 70%;
+}
