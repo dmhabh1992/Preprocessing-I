@@ -1,1 +1,261 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.direction-mixin {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+nav {
+  flex-direction: row;
+  width: 100%;
+  margin: 15px;
+  padding: 4px;
+  word-spacing: 40px;
+}
+nav nav {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: purple;
+  background-color: white;
+  margin: 0 45px;
+}
+.title {
+  display: flex;
+  width: 30%;
+  padding-left: 10%;
+  flex-direction: row;
+}
+.title h1 {
+  font-size: 30px;
+  color: aqua;
+}
+body h2 {
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  color: purple;
+  padding: 20px;
+  font-family: 'Bowlby One SC', cursive;
+}
+body .top {
+  font-family: 'Bowlby One SC', cursive;
+  background-color: silver;
+  border: 2px solid black;
+  text-align: flex-start;
+  width: 90%;
+  padding: 2%;
+  margin-left: 5%;
+  justify-content: center;
+}
+body .top .top {
+  display: flex;
+  flex-direction: column;
+}
+body .intro {
+  width: 100%;
+  padding: 3px;
+  font-family: 'Bowlby One SC', cursive;
+}
+body .intro .intro {
+  display: flex;
+  flex-direction: column;
+}
+body .skills {
+  width: 100%;
+  padding: 3px;
+  font-family: 'Bowlby One SC', cursive;
+}
+body .skills .intro {
+  display: flex;
+  flex-direction: column;
+}
+body .center {
+  display: flex;
+  justify-content: center;
+}
+body .center .middle-img1 {
+  width: 50%;
+  margin: 20px 15px;
+  padding: 20px;
+  height: 100%;
+}
+body .bottom {
+  background-color: silver;
+  border: 2px solid black;
+  width: 80%;
+  padding: 20px;
+  margin-left: 10%;
+  color: black;
+}
+body .bottom .bottom {
+  display: flex;
+  flex-direction: column;
+}
+body .bottom .work-history {
+  font-family: 'Bowlby One SC', cursive;
+}
+body .bottom .work-history p {
+  display: flex;
+  align-content: center;
+  font-family: 'Bowlby One SC', cursive;
+}
+body .bottom .contact {
+  font-family: 'Bowlby One SC', cursive;
+}
+footer .icons {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  padding: 10px;
+  margin: 10px auto;
+  color: purple;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 1.5em;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  footer {
+    background: blue;
+  }
+}

@@ -52,8 +52,133 @@ table {
 * {
     box-sizing: border-box;
 }
-
 html, body {
-    height: 100%;
+	height: 100%;
 }
+@color: silver;
+@font-family: 'Bowlby One SC', cursive;
+.direction-mixin {
+	display: flex;
+	flex-direction: column;
+}
+.content {
+	display: flex;
+	justify-content: center;
+}
+nav {
+	nav {
+		.content
+	}
+	flex-direction: row;
+	width: 100%;
+	margin: 15px;
+	padding: 4px;
+	word-spacing: 40px;
+		a {
+			font-size: 20px;
+			text-decoration: none;
+			color: purple;
+			background-color: white;
+			margin: 0 45px;
+		}//this closes nav a link//
+  }//this closes nav//
+.title {
+	display: flex;
+	width: 30%;
+	padding-left: 10%;
+	flex-direction: row;
+		h1 {
+			font-size: 30px;
+			color: aqua; 
+		}//this closes h1//
+   }//this closes title//
+body {
+	h2 {
+		text-decoration: underline;
+		display: flex;
+		justify-content: center;
+		color:purple;
+		padding: 20px;
+		font-family: @font-family;
+		}//this closes h2//
+	.top {
+		.top {
+			.direction-mixin
+		}//this closes the mixin//
+		font-family: @font-family;
+		background-color: @color;
+		border: 2px solid black;
+		text-align: flex-start;
+		width: 90%;
+		padding: 2%;
+		margin-left: 5%;
+		justify-content: center;
+	}//this closes top section//
+			.intro {
+				.intro {
+					.direction-mixin
+				}
+				width: 100%;
+				padding: 3px;
+				font-family: @font-family;
+			}//this closes intro//
+			.skills {
+				.intro {
+					.direction-mixin
+				}
+				width: 100%;
+				padding: 3px;
+				font-family: @font-family;
+			}//this closes skills//
+	.center {
+		display: flex;
+		justify-content: center;
+			.middle-img1 {
+				width: 50%;
+				margin: 20px 15px;
+				padding: 20px;
+				height: 100%;
+			}//this closes img class
+	}//this closes center//
+	.bottom {
+		.bottom {
+			.direction-mixin
+		}//this closes the mixin
+		background-color: @color;
+		border: 2px solid black;
+		width: 80%;
+		padding: 20px;
+		margin-left: 10%;
+		color: black;	
+			.work-history {
+					font-family: @font-family;
+						p {
+							display: flex;
+							align-content: center;
+							font-family: @font-family;
+						}//this closes paragraph for work-history//
+			}//this closes work-history//
+				.contact {
+					font-family: @font-family;
+				}//this closes contact//
+	}//this closes bottom//
+}//this closes body//
+footer {
+	.icons {
+		display: flex;
+		justify-content: center;
+		width: 60%;
+		padding: 10px;
+		margin: 10px auto;
+		color: purple;
+		text-shadow: 1px 1px 1px #ccc;
+		font-size: 1.5em;
+		justify-content: space-between;
+	}//this closes icons class//
+	@media (max-width: 500px) { 
+		background: blue; 
+	}
+}//this closes footer//
+
+
 
