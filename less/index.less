@@ -57,18 +57,22 @@ html, body {
 }
 @color: silver;
 @font-family: 'Bowlby One SC', cursive;
-.links(){
-	text-decoration: none;
-	color: black;
-}
-
-nav {
+.direction-mixin {
 	display: flex;
+	flex-direction: column;
+}
+.content {
+	display: flex;
+	justify-content: center;
+}
+nav {
+	nav {
+		.content
+	}
 	flex-direction: row;
 	width: 100%;
 	margin: 15px;
 	padding: 4px;
-	text-align: center;
 	word-spacing: 40px;
 		a {
 			font-size: 20px;
@@ -89,18 +93,20 @@ nav {
    }//this closes title//
 body {
 	h2 {
+		h2 {
+			.content
+		}
 		text-decoration: underline;
-		display: flex;
-		justify-content: center;
 		color:purple;
 		padding: 20px;
 		font-family: @font-family;
 		}//this closes h2//
 	.top {
+		.top {
+			.direction-mixin
+		}//this closes the mixin//
 		font-family: @font-family;
 		background-color: @color;
-		flex-direction: column;
-		display: flex;
 		border: 2px solid black;
 		text-align: flex-start;
 		width: 90%;
@@ -109,16 +115,18 @@ body {
 		justify-content: center;
 	}//this closes top section//
 			.intro {
+				.intro {
+					.direction-mixin
+				}
 				width: 100%;
-				display: flex;
-				flex-direction: column;
 				padding: 3px;
 				font-family: @font-family;
 			}//this closes intro//
 			.skills {
+				.intro {
+					.direction-mixin
+				}
 				width: 100%;
-				display: flex;
-				flex-direction: column;
 				padding: 3px;
 				font-family: @font-family;
 			}//this closes skills//
@@ -133,17 +141,16 @@ body {
 			}//this closes img class
 	}//this closes center//
 	.bottom {
+		.bottom {
+			.direction-mixin
+		}//this closes the mixin
 		background-color: @color;
-		display: flex;
 		border: 2px solid black;
 		width: 80%;
 		padding: 20px;
 		margin-left: 10%;
-		flex-direction: column;
 		color: black;	
 			.work-history {
-					display: flex;
-					flex-direction: column;
 					font-family: @font-family;
 						p {
 							display: flex;
@@ -152,8 +159,6 @@ body {
 						}//this closes paragraph for work-history//
 			}//this closes work-history//
 				.contact {
-					display: flex;
-					flex-direction: column;
 					font-family: @font-family;
 				}//this closes contact//
 	}//this closes bottom//
