@@ -52,10 +52,16 @@ table {
 * {
     box-sizing: border-box;
 }
-
 html, body {
 	height: 100%;
 }
+@color: silver;
+@font-family: 'Bowlby One SC', cursive;
+.links(){
+	text-decoration: none;
+	color: black;
+}
+
 nav {
 	display: flex;
 	flex-direction: row;
@@ -64,92 +70,107 @@ nav {
 	padding: 4px;
 	text-align: center;
 	word-spacing: 40px;
-  }
-  nav a {
-	font-size: 20px;
-	text-decoration: none;
-	color: purple;
-	background-color: white;
-	margin: 0 45px;
-  }
-  .title {
+		a {
+			font-size: 20px;
+			text-decoration: none;
+			color: purple;
+			background-color: white;
+			margin: 0 45px;
+		}//this closes nav a link//
+  }//this closes nav//
+.title {
 	display: flex;
 	width: 30%;
 	padding-left: 10%;
-  }
-  h1 {
-	font-size: 30px;
-	color: aqua; 
-  }
-  h2 {
-	font-size: 20px;
-	color: purple;
-	text-decoration: underline;
-	display: flex;
-	justify-content: center;
-	padding: 20px;
-  }
-.top {
-	display: flex;
-	border: 2px solid black;
-	text-align: flex-start;
-	width: 90%;
-	padding: 2%;
-	margin-left: 5%;
-	justify-content: center;
-	color: black;	
-}
-.intro {
-	display: flex;
-	flex-direction: column;
-	padding: 5px;
-}
-.skills {
-	display: flex;
-	flex-direction: column;
-	padding: 3px;
-}
-.center {
-	display: flex;
-	justify-content: center;
-}
-.middle-img1 {
-	width: 50%;
-	margin: 20px 15px;
-	padding: 20px;
-	height: 100%;
-}
-.bottom {
-	display: flex;
-	border: 2px solid black;
-	width: 80%;
-	padding: 20px;
-	margin-left: 10%;
-	flex-direction: column;
-	color: black;	
-}
-.work-history {
-	display: flex;
-	flex-direction: column;
-}
-.work-history p {
-	display: flex;
-	align-content: center;
-}
-.contact {
-	display: flex;
-	flex-direction: column;
-}
-.icons {
-	display: flex;
-	justify-content: center;
-	width: 60%;
-	padding: 10px;
-	margin: 10px auto;
-	color: purple;
-    text-shadow: 1px 1px 1px #ccc;
-	font-size: 1.5em;
-	justify-content: space-between;
-}
+		h1 {
+			font-size: 30px;
+			color: aqua; 
+		}//this closes h1//
+   }//this closes title//
+body {
+	h2 {
+		text-decoration: underline;
+		display: flex;
+		justify-content: center;
+		color:purple;
+		padding: 20px;
+		font-family: @font-family;
+		}//this closes h2//
+	.top {
+		font-family: @font-family;
+		background-color: @color;
+		flex-direction: column;
+		display: flex;
+		border: 2px solid black;
+		text-align: flex-start;
+		width: 90%;
+		padding: 2%;
+		margin-left: 5%;
+		justify-content: center;
+	}//this closes top section//
+			.intro {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				padding: 3px;
+				font-family: @font-family;
+			}//this closes intro//
+			.skills {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				padding: 3px;
+				font-family: @font-family;
+			}//this closes skills//
+	.center {
+		display: flex;
+		justify-content: center;
+			.middle-img1 {
+				width: 50%;
+				margin: 20px 15px;
+				padding: 20px;
+				height: 100%;
+			}//this closes img class
+	}//this closes center//
+	.bottom {
+		background-color: @color;
+		display: flex;
+		border: 2px solid black;
+		width: 80%;
+		padding: 20px;
+		margin-left: 10%;
+		flex-direction: column;
+		color: black;	
+			.work-history {
+					display: flex;
+					flex-direction: column;
+					font-family: @font-family;
+						p {
+							display: flex;
+							align-content: center;
+							font-family: @font-family;
+						}//this closes paragraph for work-history//
+			}//this closes work-history//
+				.contact {
+					display: flex;
+					flex-direction: column;
+					font-family: @font-family;
+				}//this closes contact//
+	}//this closes bottom//
+}//this closes body//
+footer {
+	.icons {
+		display: flex;
+		justify-content: center;
+		width: 60%;
+		padding: 10px;
+		margin: 10px auto;
+		color: purple;
+		text-shadow: 1px 1px 1px #ccc;
+		font-size: 1.5em;
+		justify-content: space-between;
+	}//this closes icons class//
+}//this closes footer//
+
 
 
